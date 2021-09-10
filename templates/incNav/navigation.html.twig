@@ -1,0 +1,82 @@
+<section>
+    <style>
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+      nav  ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    nav ul li {
+        float: right;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .lien-navigation:hover
+    {
+        color: var(--couleur);
+        text-decoration: none;
+        transition-duration: 1s;
+    }
+
+    </style>
+    <div class="col-sm-4 col-xs-6">
+        <a href="{{ path('accueil') }}">
+            <img id="logo" src="{{ asset('img/logo/logoModifie.png') }}">
+        </a>
+    </div>
+    <nav id="navigation">
+        <ul>
+            <li><a class="lien-navigation" href="#contact">Contact</a></li>
+            <li><a class="lien-navigation" href="#portfolio">portfolio</a></li>
+            <li><a class="lien-navigation" href="#competences">compétences</a></li>
+            <li><a class="lien-navigation" href="#aPropos">A propos</a></li>
+            <li>
+                <a class="lien-navigation" id="glyphicon-accueil" href="{{ path('accueil') }}">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <script>
+        //Get the menu:
+        myNav = document.getElementById("navigation");
+
+        // When the user scrolls down 20px from the top of the document, show the background-color menu
+        window.onscroll = function() {scrollNavigation()};
+
+        function scrollNavigation()
+        {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+            {
+                myNav.style.backgroundColor = "black";
+                myNav.style.opacity = "0.6";
+            }
+            else
+            {
+                myNav.style.backgroundColor = "initial";
+                myNav.style.opacity = "1";
+            }
+        }
+
+
+    </script>
+</section>

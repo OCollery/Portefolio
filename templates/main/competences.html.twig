@@ -1,0 +1,50 @@
+<section>
+    <div class="header-section col-sm-12 col-xs-12">
+        <h1 id="competences">Compétences en développement</h1>
+    </div>
+    <div class="col-sm-offset-1 col-sm-10 col-xs-12">
+        <div class="col-sm-6 col-xs-12">
+            <div>
+                <h2>Back-end</h2>
+                {% for items in backend %}
+                    <span>{{ items.nom }}</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: {{ items.progression }}%" aria-valuenow="{{ items.progression }}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div>
+                <h2>Front-end</h2>
+                {% for items in frontend %}
+                    <span>{{ items.nom }}</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: {{ items.progression }}%" aria-valuenow="{{ items.progression }}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div>
+                <h2>CMS</h2>
+                <span>WORDPRESS</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Divers</h2>
+                <span>WINDOWS</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-offset-1 col-sm-4 col-xs-12">
+            <img class="col-xs-12" src="{{ asset('document/cv Olivier Collery.png') }}">
+            <button class="btn btn-sucess col-sm-12 col-xs-12">
+                <a href="document/{{ monIdentite.filename }}">TELECHARGER MON CV</a>
+            </button>
+        </div>
+    </div>
+</section>

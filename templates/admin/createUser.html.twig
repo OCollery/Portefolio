@@ -1,0 +1,24 @@
+
+{% block main %}
+<div class="divMenuUser">
+    <div class="col-xs-offset-1 xol-xs-10">
+        <h1 class="titreUser">Créér un compte</h1>
+    </div>
+
+    <div class="col-sm-6">
+        {{ form_start(createForm) }}
+
+        {{ form_row(createForm.nom) }}
+        {{ form_row(createForm.prenom) }}
+        {{ form_row(createForm.mail) }}
+        {{ form_row(createForm.password) }}
+
+        <button type="submit" class="btn btn-primary col-sm-offset-2 col-sm-3 col-xs-offset-1 col-xs-4">Valider</button>
+        {{ form_end(createForm) }}
+
+        <form action="{{ path('accueil') }}">
+            <button class="btn btn-primary col-xs-offset-1 col-sm-3 col-xs-4">Annuler</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

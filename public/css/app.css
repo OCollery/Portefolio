@@ -1,0 +1,210 @@
+:root
+{
+    --couleur2:#008080;/*vert*/
+    --couleur:#048b9a;/*bleu canard*/
+    --font:'Roboto Thin';
+}
+
+
+/********Bannière site web**********/
+.hero-image
+{
+    background-image: url("../img/site/ecran pc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+    background-size: cover;
+}
+
+.hero-text
+{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#texte-changer
+{
+    font-size: 5em;
+}
+
+/***********A propos de moi**************/
+.presentation
+{
+    text-align: center;
+}
+
+.presentationDetail
+{
+    text-align: justify;
+}
+
+#logoDescritpion
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.container-a-propos
+{
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+.container-a-propos-photo
+{
+    padding: 50px;
+}
+
+/*********Compétences***********/
+.header-section
+{
+    text-align: center;
+}
+.progress
+{
+    height: 10px;
+}
+
+.progress-bar
+{
+    height: 10px;
+}
+
+/********Formulaire de contact********/
+#contact
+{
+    color: white;
+}
+
+.contact ul li
+{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.form-contact
+{
+    background-color: #262626;
+    padding:50px;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.container-contact
+{
+    background-image: url("../img/transition3.png");
+    background-size: cover;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.autorisation-donnees
+{
+    color: white;
+}
+/*********Footer*******/
+.footer
+{
+    background-color: #262626;
+    height: 100px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer p a
+{
+    color: white;
+    text-decoration: none;
+}
+
+/**********Actuellement********/
+.actuellement
+{
+    background-image: url("../img/actuellement.png");
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/*******Logo**********/
+#logo
+{
+    width: 50%;
+    border-radius: 100%;
+}
+
+/*******Général*********/
+h1
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+.btn
+{
+    margin-top: 10px;
+}
+/*******Portfolio*********/
+.div-site:hover .header-container-site
+{
+    opacity: 0.3;
+}
+
+.footer-container-site
+{
+    text-align: center;
+    height: 100px;
+    color: black;
+}
+
+/*******Transitions*******/
+.transition1
+{
+    background-image: url("../img/transition1.png");
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+/***Navigation mobile**/
+#logoMobile
+{
+    display: none;
+}
+
+.topnavMobile
+{
+    display: none;
+}

@@ -1,0 +1,56 @@
+<section>
+    <style>
+    .navigationMention
+    {
+        background-color: black;
+    }
+
+    .navigationMention ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .navigationMention ul li
+    {
+        float: right;
+    }
+
+    .navigationMention li a
+    {
+        display: block;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+
+
+    .lien-navigation:hover
+    {
+        color: var(--couleur);
+        text-decoration: none;
+        transition-duration: 1s;
+    }
+
+
+    </style>
+    <div class="col-sm-4">
+        <a href="{{ path('accueil') }}">
+            <img id="logo" src="{{ asset('img/logo/logoModifie.png') }}">
+        </a>
+    </div>
+    <nav class="navigationMention">
+        <ul>
+            <li>
+                <a class="lien-navigation" href="{{ path('accueil') }}">
+                    <span class="glyphicon glyphicon-home"> Retour à l'accueil</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>

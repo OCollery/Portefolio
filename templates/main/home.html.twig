@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} | Accueil{% endblock %}
+
+{% block header %}
+    {% include 'incNav/navigationMobile.html.twig' %}
+    {% include 'incNav/navigation.html.twig' %}
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 id="texte-changer">DEVELOPPEUR</h1>
+        <h3>Disponible immédiatement</h3>
+        <a href="#contact">
+            <button class="btn btn-success">Me contacter</button>
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<section>
+    <div class="presentation col-sm-offset-1 col-sm-10 col-xs-12">
+        <div>
+            <h1 id="aPropos" class="header-section">A propos de moi</h1>
+            <h2>Je suis un développeur web FullStack junior</h2>
+        </div>
+        <div class="presentationDetail">
+            <div class="col-sm-12 col-xs-12">
+                <div class="col-sm-6 col-xs-12 container-a-propos">
+                    <div class="container-a-propos-photo">
+                    <img id="logoDescritpion" src="{{ asset('img/logo/logoGraphNoir.png') }}">
+                    </div>
+                </div>
+                <div class="col-sm-6 container-a-propos">
+                    <h3>Un jeune développeur passionné</h3>
+                    <p>
+                        Après 11 années passées dans le commerce de détail, j'ai décidé de réorienté ma vie professionnelle.<br>
+                        Fin 2019, j'ai décidé d'arrêter mon poste de Responsable de rayon chez Boulanger pour me concentrer sur un
+                        projet datant du lycée, devenir Développeur web.<br>
+                        Pour lancer à bien mon projet, j'ai intégré un centre de formation, l'Ecole Eni Informatique, dans lequel
+                        j'ai suivi une formation de 8 mois, où j'ai pû apprendre un grand nombre de langages, de framework et le CMS
+                        Wordpress.<br>
+                        Ma première expérience professionnelle dans le développement a été lors du développement complet du site
+                        d'une photographe indépendante Elodie Simon.<br>
+                        Je travail depuis, sur d'autres projets afin de continuer à exposer mon travail et apprendre de nouvelles
+                        technologies.
+                    </p>
+                    <h3>Expérience professionnelle</h3>
+                    <p>
+                        Mon expérience dans le domaine du commerce me permet de cibler les besoins de mes clients et
+                        d'apporter des solutions à leurs attentes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="actuellement col-sm-12 col-xs-12">
+            <h2>Actuellement:</h2>
+            <p>
+                A la recherche d'un poste de Développeur web ou d'une alternance pour une formation
+                Concepteur Développeur d'Applications.
+            </p>
+        </div>
+
+
+        {% include 'main/competences.html.twig' %}
+        <div class="transition1 col-sm-12 col-xs-12">
+            <h2>
+                Ces compétences évoluent avec les technologies actuelles.<br><br>
+                Actuellement sur l'apprentissage de React et Spring
+            </h2>
+        </div>
+</section>
+    {% include 'main/portfolio.html.twig' %}
+
+    {% include 'main/contact.html.twig' %}
+<hr>
+
+    {% include 'incNav/titrePrincipal.html.twig' %}
+
+{# Conflit avec la navigation
+    {% include 'incNav/boutonRetourHautPage.html.twig' %}
+#}
+{% endblock %}

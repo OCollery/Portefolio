@@ -1,0 +1,98 @@
+<section>
+    <script>
+    const sleep = (time)=>{
+        return new Promise((resolve) => setTimeout(resolve, time))
+    }
+
+        /** Affichage mot WEB **/
+    const web = async ()=>{
+        let tableauWeb = [' ','W','E','B']
+        let mot = document.getElementById("texte-changer");
+
+        for (let i =0; i < tableauWeb.length; i++)
+        {
+            await sleep(100)
+            let lettreWeb = tableauWeb[i]
+            mot.innerHTML = mot.innerHTML + lettreWeb
+        }
+    const attente = await sleep(1500)
+
+        let tableauWeb2 = ['DEVELOPPEUR WE','DEVELOPPEUR W','DEVELOPPEUR ']
+        for (let i =0; i < tableauWeb2.length; i++)
+        {
+            await sleep(100)
+            let lettreWeb2 = tableauWeb2[i]
+            mot.innerHTML = lettreWeb2
+        }
+    /****************************************************/
+
+        /** Affichage mot SYMFONY **/
+        let tableauSymfony = ['S','Y','M','F','O','N','Y']
+        for (let i =0; i<tableauSymfony.length; i++)
+        {
+            await sleep(100)
+            let lettreSymfony = tableauSymfony[i]
+            mot.innerHTML = mot.innerHTML + lettreSymfony
+        }
+
+    const attente2 = await sleep(1500)
+
+        let tableauSymfony2 = ['DEVELOPPEUR SYMFON','DEVELOPPEUR SYNFO','DEVELOPPEUR SYNF','DEVELOPPEUR SYN'
+                        ,'DEVELOPPEUR SY','DEVELOPPEUR S','DEVELOPPEUR ']
+        for (let i =0; i<tableauSymfony2.length; i++)
+        {
+            await sleep(100)
+            let lettreSymfony2 = tableauSymfony2[i]
+            mot.innerHTML = lettreSymfony2
+        }
+    /*********************************************************/
+
+        /** affichage mot Javascript **/
+        let tableauJS = ['J','A','V','A','S','C','R','I','P','T']
+        for (let i =0; i < tableauJS.length; i++)
+        {
+            await sleep(100)
+            let lettreJS = tableauJS[i]
+            mot.innerHTML = mot.innerHTML + lettreJS
+        }
+
+    const attente3 = await sleep(1500)
+
+        let tableauJS2 = ['DEVELOPPEUR JAVASCRIP','DEVELOPPEUR JAVASCRI','DEVELOPPEUR JAVASCR','DEVELOPPEUR JAVASC'
+            ,'DEVELOPPEUR JAVAS','DEVELOPPEUR JAVA','DEVELOPPEUR JAV','DEVELOPPEUR JA','DEVELOPPEUR J','DEVELOPPEUR ']
+        for (let i =0; i<tableauJS2.length; i++)
+        {
+            await sleep(100)
+            let lettreJS2 = tableauJS2[i]
+            mot.innerHTML = lettreJS2
+        }
+
+        /*********************************************************/
+
+        /** affichage mot FullStack **/
+        let tableauFull = ['F','U','L','L','S','T','A','C','K']
+        for (let i =0; i < tableauFull.length; i++)
+        {
+            await sleep(100)
+            let lettreFull = tableauFull[i]
+            mot.innerHTML = mot.innerHTML + lettreFull
+        }
+
+        const attente4 = await sleep(1500)
+
+        let tableauFull2 = ['DEVELOPPEUR FULLSTAC','DEVELOPPEUR FULLSTA','DEVELOPPEUR FULLST','DEVELOPPEUR FULLS'
+            ,'DEVELOPPEUR FULL','DEVELOPPEUR FUL','DEVELOPPEUR FU','DEVELOPPEUR F','DEVELOPPEUR ']
+        for (let i =0; i<tableauFull2.length; i++)
+        {
+            await sleep(100)
+            let lettreFull2 = tableauFull2[i]
+            mot.innerHTML = lettreFull2
+        }
+
+
+        web()
+    }
+    web()
+
+    </script>
+</section>

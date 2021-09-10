@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Olivier Collery - Portefolio{% endblock %}</title>
+
+        {% block noIndex %}{% endblock %}
+
+        {% block stylesheets %}
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/mediaQuery.css') }}">
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    <header>
+        {% block header %}
+        {% block nav %}{% include 'incNav/navigation.html.twig' %}{% endblock nav %}
+        {% endblock %}
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <div class="footer col-sm-12 col-xs-12">
+            <p>
+                Copyright &copy; 2021 - Olivier COLLERY. Tous droits réservés.
+            </p>
+            <p>
+                <a href="{{ path('mentionsLegales') }}">Mentions légales |</a>
+                <a href="{{ path('politique') }}">Politique de confidentialité</a>
+            </p>
+        </div>
+    </footer>
+    </body>
+</html>

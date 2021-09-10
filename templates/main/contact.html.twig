@@ -1,0 +1,47 @@
+<section>
+    <div class="col-sm-12 col-xs-12 container-contact">
+        <div class="header-competence">
+            <h1 id="contact" class="header-section">CONTACTEZ-MOI</h1>
+        </div>
+
+        <div class="col-sm-offset-2 col-sm-8 col-xs-12 form-contact">
+            <div class="col-sm-6 col-xs-12 contact">
+                <ul>
+                    <li>
+                        <a href="{{ monIdentite.mail }}">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            {{ monIdentite.mail }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ monIdentite.telephone }}"
+                            <span class="glyphicon glyphicon-phone"></span>
+                            {{ monIdentite.telephone }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ monIdentite.adresse }}">
+                            <span class="glyphicon glyphicon-home"></span>
+                            {{ monIdentite.adresse }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                {{ form_start(formulaireContact) }}
+                    {{ form_row(formulaireContact.nom) }}
+                    {{ form_row(formulaireContact.prenom) }}
+                    {{ form_row(formulaireContact.mail) }}
+                    {{ form_row(formulaireContact.telephone) }}
+                    {{ form_row(formulaireContact.objet) }}
+                    {{ form_row(formulaireContact.message) }}
+                    {{ form_row(formulaireContact.autorisation) }}
+                    <p  class="autorisation-donnees">En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me
+                        recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et
+                        exercer vos droits, veuillez consultez la <a href="#">Politique de confidentialité</a>.</p>
+                    <button class="btn btn-success" type="submit">Envoyer</button>
+                    {{ form_end(formulaireContact) }}
+            </div>
+        </div>
+    </div>
+</section>

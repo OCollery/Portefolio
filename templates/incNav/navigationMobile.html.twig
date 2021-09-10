@@ -1,0 +1,69 @@
+<section>
+    <style>
+        .topnavMobile {
+            overflow: hidden;
+            background-color: #222021;
+            position: relative;
+            z-index: 1;
+        }
+
+        .topnavMobile #myLinks {
+            display: none;
+        }
+
+        .topnavMobile a {
+            color: white;
+            padding-right: 16px;
+            padding-left: 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnavMobile a.icon {
+            background: #222021;
+            float: none;
+            text-align: center;
+        }
+
+        .topnavMobile a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+    </style>
+
+
+        <!-- Top Navigation Menu -->
+        <div class="topnavMobile">
+            <a href="{{ path('accueil') }}">
+                <img id="logoMobile" src="{{ asset('img/logo/logoModifie.png') }}">
+            </a>
+            <div id="myLinks">
+                <li><a href="#aPropos">A propos</a></li>
+                <li><a href="#competences">compétences</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </a>
+        </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</section>
